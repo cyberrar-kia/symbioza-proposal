@@ -18,7 +18,7 @@ const slides = [
 
 function Slide0() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", minHeight:"100%", textAlign:"center", padding:"clamp(12px,4vw,0px) clamp(20px,5vw,80px)" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", minHeight:"100%", textAlign:"center", padding:"16px clamp(16px,5vw,80px)", boxSizing:"border-box", width:"100%" }}>
       <div style={{ fontSize:"clamp(11px,1.5vw,13px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:24, fontWeight:500 }}>Website Development Proposal</div>
       <h1 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(36px,7vw,88px)", color:CREAM, fontWeight:700, lineHeight:1.05, marginBottom:24, maxWidth:800 }}>
         Symbioza<br/>
@@ -39,22 +39,22 @@ function Slide0() {
 
 function Slide1() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"16px clamp(20px,5vw,80px)", maxWidth:900, margin:"0 auto", width:"100%", boxSizing:"border-box" }}>
       <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>01 — Platform</div>
-      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:32, lineHeight:1.1 }}>
+      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:24, lineHeight:1.1, wordBreak:"break-word" }}>
         Next.js 14 +<br/>Framer Motion
       </h2>
-      <p style={{ fontSize:"clamp(14px,1.8vw,17px)", color:"rgba(245,240,232,0.65)", lineHeight:1.8, marginBottom:32, maxWidth:600 }}>
+      <p style={{ fontSize:"clamp(14px,1.8vw,17px)", color:"rgba(245,240,232,0.65)", lineHeight:1.8, marginBottom:24, maxWidth:"100%", wordBreak:"break-word", overflowWrap:"break-word" }}>
         Not Webflow. Not Framer (the platform). The radial node system you've designed is a custom geometric interaction — both tools will fight against it. Next.js gives you full ownership.
       </p>
-      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(140px,1fr))", gap:10 }}>
+      <div style={{ display:"grid", gridTemplateColumns:"repeat(2,1fr)", gap:10 }}>
         {[
           { label:"Next.js 14", sub:"Full control, zero limits" },
           { label:"Framer Motion", sub:"Spring animations & panels" },
           { label:"Sanity CMS", sub:"Edit content without code" },
           { label:"Vercel", sub:"Deploy in seconds" },
         ].map(item => (
-          <div key={item.label} style={{ background:"rgba(245,240,232,0.04)", border:"1px solid rgba(245,240,232,0.08)", borderRadius:12, padding:"18px 20px" }}>
+          <div key={item.label} style={{ background:"rgba(245,240,232,0.04)", border:"1px solid rgba(245,240,232,0.08)", borderRadius:12, padding:"14px 16px", minWidth:0, overflow:"hidden" }}>
             <div style={{ fontFamily:"'Inter', sans-serif", fontWeight:600, fontSize:"clamp(13px,1.6vw,15px)", color:CREAM, marginBottom:6 }}>{item.label}</div>
             <div style={{ fontSize:"clamp(11px,1.3vw,13px)", color:MUTED }}>{item.sub}</div>
           </div>
@@ -66,10 +66,10 @@ function Slide1() {
 
 function Slide2() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"16px clamp(20px,5vw,80px)", maxWidth:900, margin:"0 auto", width:"100%", boxSizing:"border-box" }}>
       <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>02 — Cost</div>
-      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:36, lineHeight:1.1 }}>Two Options,<br/>One Recommendation</h2>
-      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(220px,1fr))", gap:16, marginBottom:24 }}>
+      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:24, lineHeight:1.1, wordBreak:"break-word" }}>Two Options,<br/>One Recommendation</h2>
+      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(min(100%,220px),1fr))", gap:14, marginBottom:20 }}>
         <div style={{ background:"rgba(200,103,26,0.08)", border:"2px solid rgba(200,103,26,0.4)", borderRadius:16, padding:"clamp(20px,3vw,32px)", position:"relative" }}>
           <div style={{ position:"absolute", top:-13, left:24, background:ORANGE, borderRadius:50, padding:"4px 14px", fontSize:11, fontWeight:700, color:"white", letterSpacing:"1px" }}>RECOMMENDED</div>
           <div style={{ fontSize:"clamp(11px,1.3vw,12px)", color:ORANGE, letterSpacing:"2px", textTransform:"uppercase", marginBottom:12, fontWeight:500 }}>Interactive Version</div>
@@ -89,9 +89,9 @@ function Slide2() {
 
 function Slide3() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"16px clamp(20px,5vw,80px)", maxWidth:900, margin:"0 auto", width:"100%", boxSizing:"border-box" }}>
       <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>03 — Timeline</div>
-      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:40, lineHeight:1.1 }}>Realistic,<br/>Not Optimistic</h2>
+      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:20, lineHeight:1.1, wordBreak:"break-word" }}>Realistic,<br/>Not Optimistic</h2>
       <div style={{ display:"flex", flexDirection:"column", gap:0 }}>
         {[
           { day:"Day 1–2", title:"Hero + Radial Structure", sub:"First milestone delivered for your review" },
@@ -122,10 +122,10 @@ function Slide3() {
 
 function Slide4() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"16px clamp(20px,5vw,80px)", maxWidth:900, margin:"0 auto", width:"100%", boxSizing:"border-box" }}>
       <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>04 — Portfolio</div>
-      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:36, lineHeight:1.1 }}>Relevant Work</h2>
-      <div style={{ display:"flex", flexDirection:"column", gap:14 }}>
+      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:24, lineHeight:1.1, wordBreak:"break-word" }}>Relevant Work</h2>
+      <div style={{ display:"flex", flexDirection:"column", gap:12, width:"100%" }}>
         {[
           {
             name:"Graded Interiors",
@@ -162,9 +162,9 @@ function Slide4() {
 
 function Slide5() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"16px clamp(20px,5vw,80px)", maxWidth:900, margin:"0 auto", width:"100%", boxSizing:"border-box" }}>
       <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>05 — Live Demo</div>
-      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:28, lineHeight:1.1 }}>I Built a<br/>Working Demo</h2>
+      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:20, lineHeight:1.1, wordBreak:"break-word" }}>I Built a<br/>Working Demo</h2>
       <div style={{ background:"rgba(200,103,26,0.06)", border:"1px solid rgba(200,103,26,0.25)", borderRadius:16, padding:"clamp(20px,3.5vw,36px)", marginBottom:24 }}>
         <div style={{ fontSize:"clamp(14px,1.8vw,19px)", color:CREAM, fontWeight:600, marginBottom:14, lineHeight:1.4 }}>
           See the radial node system working — right now
@@ -189,7 +189,7 @@ function Slide5() {
 
 function Slide6() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", minHeight:"100%", textAlign:"center", padding:"clamp(12px,4vw,0px) clamp(20px,5vw,80px)" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", minHeight:"100%", textAlign:"center", padding:"16px clamp(16px,5vw,80px)", boxSizing:"border-box", width:"100%" }}>
       <div style={{ fontSize:"clamp(11px,1.5vw,13px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:24, fontWeight:500 }}>Let's Build</div>
       <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(32px,6vw,72px)", color:CREAM, fontWeight:700, lineHeight:1.1, marginBottom:24, maxWidth:700 }}>
         Ready to Start<br/>the Moment<br/>Assets Arrive
@@ -198,7 +198,7 @@ function Slide6() {
       <p style={{ fontSize:"clamp(14px,1.8vw,17px)", color:"rgba(245,240,232,0.55)", lineHeight:1.8, maxWidth:480, marginBottom:48 }}>
         I value clarity and execution over endless revisions — the same way you do. If this sounds like the right fit, I'm ready.
       </p>
-      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(120px,1fr))", gap:10, width:"100%", maxWidth:600, marginBottom:32 }}>
+      <div style={{ display:"grid", gridTemplateColumns:"repeat(2,1fr)", gap:10, width:"100%", maxWidth:600, marginBottom:28 }}>
         {[
           { label:"Platform", val:"Next.js 14" },
           { label:"Interactive", val:"$1,500 · 7 days" },
@@ -295,6 +295,7 @@ export default function ProposalDeck() {
           cursor: current < total - 1 ? "pointer" : "default",
           overflowY:"auto",
           overflowX:"hidden",
+          WebkitOverflowScrolling:"touch",
         }}
       >
         <SlideComponent />
