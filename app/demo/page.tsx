@@ -246,9 +246,7 @@ export default function SymbiozaDemo() {
         <div style={{ fontSize:"clamp(10px,1.2vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.2)", fontWeight:400 }}>
           Symbioza Group · In Concordia Crescimus
         </div>
-        <div style={{ fontSize:12, color:"rgba(245,240,232,0.15)" }}>
-          Demo by <span style={{ color:ORANGE }}>Elite Traffic Media</span>
-        </div>
+
       </footer>
 
       {/* CONTENT PANEL */}

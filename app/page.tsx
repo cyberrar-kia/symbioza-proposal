@@ -163,23 +163,25 @@ function Slide4() {
 function Slide5() {
   return (
     <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
-      <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>05 — Suggestion</div>
-      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:28, lineHeight:1.1 }}>One Idea<br/>to Elevate It</h2>
-      <div style={{ background:"rgba(200,103,26,0.06)", border:"1px solid rgba(200,103,26,0.25)", borderRadius:16, padding:"clamp(24px,4vw,40px)", marginBottom:28 }}>
-        <div style={{ fontSize:"clamp(15px,2vw,20px)", color:CREAM, fontWeight:600, marginBottom:16, lineHeight:1.4 }}>
-          Add a staggered entrance animation to the radial nodes on first load
+      <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>05 — Live Demo</div>
+      <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:28, lineHeight:1.1 }}>I Built a<br/>Working Demo</h2>
+      <div style={{ background:"rgba(200,103,26,0.06)", border:"1px solid rgba(200,103,26,0.25)", borderRadius:16, padding:"clamp(20px,3.5vw,36px)", marginBottom:24 }}>
+        <div style={{ fontSize:"clamp(14px,1.8vw,19px)", color:CREAM, fontWeight:600, marginBottom:14, lineHeight:1.4 }}>
+          See the radial node system working — right now
         </div>
-        <p style={{ fontSize:"clamp(14px,1.8vw,17px)", color:"rgba(245,240,232,0.65)", lineHeight:1.8, marginBottom:0 }}>
-          Each node fades and scales in sequentially from the centre outward — 200ms stagger between nodes. The system feels alive before the user even interacts with it. This reinforces the "systems thinking" brand concept the moment the page loads, and it costs nothing extra in scope.
+        <p style={{ fontSize:"clamp(13px,1.6vw,16px)", color:"rgba(245,240,232,0.6)", lineHeight:1.8, marginBottom:0 }}>
+          Rather than just describe the concept, I built a functional sketch so you can experience how the radial nodes open content panels, how the animations feel, and how the hero layout translates to a live site. This is built using your actual visual direction and your exact headline copy.
         </p>
       </div>
-      <div style={{ display:"flex", alignItems:"center", gap:16 }}>
-        <div style={{ width:8, height:8, borderRadius:"50%", background:ORANGE, flexShrink:0 }} />
-        <div style={{ fontSize:"clamp(13px,1.6vw,15px)", color:MUTED }}>Cost impact: <span style={{ color:CREAM }}>Zero — included in the quoted price</span></div>
+      <div style={{ background:"rgba(245,240,232,0.03)", border:"1px solid rgba(245,240,232,0.08)", borderRadius:12, padding:"clamp(14px,2.5vw,22px)", marginBottom:24 }}>
+        <div style={{ fontSize:"clamp(11px,1.2vw,12px)", letterSpacing:"2px", textTransform:"uppercase", color:MUTED, marginBottom:8 }}>Important note</div>
+        <p style={{ fontSize:"clamp(12px,1.5vw,14px)", color:"rgba(245,240,232,0.5)", lineHeight:1.75 }}>
+          This is a directional prototype — not the finished product. It was built without your video asset, full mockup details, or copy. Once you share the complete assets and brief, the delivered site will match your visual direction precisely and be built to production standard.
+        </p>
       </div>
-      <div style={{ display:"flex", alignItems:"center", gap:16, marginTop:12 }}>
+      <div style={{ display:"flex", alignItems:"center", gap:14 }}>
         <div style={{ width:8, height:8, borderRadius:"50%", background:ORANGE, flexShrink:0 }} />
-        <div style={{ fontSize:"clamp(13px,1.6vw,15px)", color:MUTED }}>Implementation: <span style={{ color:CREAM }}>Framer Motion's staggerChildren — 6 lines of code</span></div>
+        <div style={{ fontSize:"clamp(12px,1.5vw,14px)", color:MUTED }}>Staggered entrance animation already implemented: <span style={{ color:CREAM }}>included at no extra cost</span></div>
       </div>
     </div>
   );
@@ -217,7 +219,7 @@ function Slide6() {
 }
 
 const slideComponents = [Slide0, Slide1, Slide2, Slide3, Slide4, Slide5, Slide6];
-const slideLabels = ["Cover", "Platform", "Cost", "Timeline", "Portfolio", "Suggestion", "Let's Build"];
+const slideLabels = ["Cover", "Platform", "Cost", "Timeline", "Portfolio", "Live Demo", "Let's Build"];
 
 export default function ProposalDeck() {
   const [current, setCurrent] = useState(0);
