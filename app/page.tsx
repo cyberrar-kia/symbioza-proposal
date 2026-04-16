@@ -18,7 +18,7 @@ const slides = [
 
 function Slide0() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", height:"100%", textAlign:"center", padding:"0 clamp(24px,6vw,80px)" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", minHeight:"100%", textAlign:"center", padding:"clamp(12px,4vw,0px) clamp(20px,5vw,80px)" }}>
       <div style={{ fontSize:"clamp(11px,1.5vw,13px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:24, fontWeight:500 }}>Website Development Proposal</div>
       <h1 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(36px,7vw,88px)", color:CREAM, fontWeight:700, lineHeight:1.05, marginBottom:24, maxWidth:800 }}>
         Symbioza<br/>
@@ -30,7 +30,7 @@ function Slide0() {
       </p>
       <div style={{ display:"flex", alignItems:"center", gap:16, flexWrap:"wrap", justifyContent:"center" }}>
         <div style={{ fontSize:"clamp(13px,1.8vw,15px)", color:"rgba(245,240,232,0.5)" }}>Prepared by</div>
-        <div style={{ background:"rgba(200,103,26,0.12)", border:"1px solid rgba(200,103,26,0.3)", borderRadius:50, padding:"8px 20px", fontSize:"clamp(13px,1.8vw,15px)", color:ORANGE, fontWeight:600 }}>Joshua Enaholo · Elite Traffic Media</div>
+        <div style={{ background:"rgba(200,103,26,0.12)", border:"1px solid rgba(200,103,26,0.3)", borderRadius:50, padding:"8px 20px", fontSize:"clamp(13px,1.8vw,15px)", color:ORANGE, fontWeight:600 }}>Joshua Ovbiagele · Elite Traffic Media</div>
       </div>
       <div style={{ position:"absolute", bottom:40, fontSize:12, color:"rgba(255,255,255,0.2)", letterSpacing:"2px", textTransform:"uppercase" }}>Tap or press → to begin</div>
     </div>
@@ -39,7 +39,7 @@ function Slide0() {
 
 function Slide1() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", height:"100%", padding:"0 clamp(24px,8vw,120px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
       <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>01 — Platform</div>
       <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:32, lineHeight:1.1 }}>
         Next.js 14 +<br/>Framer Motion
@@ -47,7 +47,7 @@ function Slide1() {
       <p style={{ fontSize:"clamp(14px,1.8vw,17px)", color:"rgba(245,240,232,0.65)", lineHeight:1.8, marginBottom:32, maxWidth:600 }}>
         Not Webflow. Not Framer (the platform). The radial node system you've designed is a custom geometric interaction — both tools will fight against it. Next.js gives you full ownership.
       </p>
-      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(180px,1fr))", gap:14 }}>
+      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(140px,1fr))", gap:10 }}>
         {[
           { label:"Next.js 14", sub:"Full control, zero limits" },
           { label:"Framer Motion", sub:"Spring animations & panels" },
@@ -66,10 +66,10 @@ function Slide1() {
 
 function Slide2() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", height:"100%", padding:"0 clamp(24px,8vw,120px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
       <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>02 — Cost</div>
       <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:36, lineHeight:1.1 }}>Two Options,<br/>One Recommendation</h2>
-      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(260px,1fr))", gap:20, marginBottom:32 }}>
+      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(220px,1fr))", gap:16, marginBottom:24 }}>
         <div style={{ background:"rgba(200,103,26,0.08)", border:"2px solid rgba(200,103,26,0.4)", borderRadius:16, padding:"clamp(20px,3vw,32px)", position:"relative" }}>
           <div style={{ position:"absolute", top:-13, left:24, background:ORANGE, borderRadius:50, padding:"4px 14px", fontSize:11, fontWeight:700, color:"white", letterSpacing:"1px" }}>RECOMMENDED</div>
           <div style={{ fontSize:"clamp(11px,1.3vw,12px)", color:ORANGE, letterSpacing:"2px", textTransform:"uppercase", marginBottom:12, fontWeight:500 }}>Interactive Version</div>
@@ -89,7 +89,7 @@ function Slide2() {
 
 function Slide3() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", height:"100%", padding:"0 clamp(24px,8vw,120px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
       <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>03 — Timeline</div>
       <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:40, lineHeight:1.1 }}>Realistic,<br/>Not Optimistic</h2>
       <div style={{ display:"flex", flexDirection:"column", gap:0 }}>
@@ -98,7 +98,7 @@ function Slide3() {
           { day:"Day 3–5", title:"Full Interactive Build", sub:"All nodes, panels, transitions, and CMS connected" },
           { day:"Day 6–7", title:"Polish + Launch Ready", sub:"Revisions, cross-browser testing, Vercel deployment" },
         ].map((item, i) => (
-          <div key={item.day} style={{ display:"flex", gap:"clamp(16px,3vw,32px)", alignItems:"flex-start", paddingBottom: i < 2 ? 28 : 0 }}>
+          <div key={item.day} style={{ display:"flex", gap:"clamp(12px,2.5vw,28px)", alignItems:"flex-start", paddingBottom: i < 2 ? 20 : 0 }}>
             <div style={{ display:"flex", flexDirection:"column", alignItems:"center", flexShrink:0 }}>
               <div style={{ width:44, height:44, borderRadius:"50%", background:ORANGE, display:"flex", alignItems:"center", justifyContent:"center", fontSize:13, fontWeight:700, color:"white", flexShrink:0 }}>{i+1}</div>
               {i < 2 && <div style={{ width:1, height:28, background:"rgba(200,103,26,0.25)", marginTop:0 }} />}
@@ -122,10 +122,10 @@ function Slide3() {
 
 function Slide4() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", height:"100%", padding:"0 clamp(24px,8vw,120px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
       <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>04 — Portfolio</div>
       <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:36, lineHeight:1.1 }}>Relevant Work</h2>
-      <div style={{ display:"flex", flexDirection:"column", gap:20 }}>
+      <div style={{ display:"flex", flexDirection:"column", gap:14 }}>
         {[
           {
             name:"Graded Interiors",
@@ -162,7 +162,7 @@ function Slide4() {
 
 function Slide5() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", height:"100%", padding:"0 clamp(24px,8vw,120px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", minHeight:"100%", padding:"clamp(12px,4vw,0px) clamp(20px,6vw,100px)", maxWidth:900, margin:"0 auto", width:"100%" }}>
       <div style={{ fontSize:"clamp(11px,1.3vw,12px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:20, fontWeight:500 }}>05 — Suggestion</div>
       <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(28px,5vw,56px)", color:CREAM, fontWeight:700, marginBottom:28, lineHeight:1.1 }}>One Idea<br/>to Elevate It</h2>
       <div style={{ background:"rgba(200,103,26,0.06)", border:"1px solid rgba(200,103,26,0.25)", borderRadius:16, padding:"clamp(24px,4vw,40px)", marginBottom:28 }}>
@@ -187,7 +187,7 @@ function Slide5() {
 
 function Slide6() {
   return (
-    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", height:"100%", textAlign:"center", padding:"0 clamp(24px,6vw,80px)" }}>
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", minHeight:"100%", textAlign:"center", padding:"clamp(12px,4vw,0px) clamp(20px,5vw,80px)" }}>
       <div style={{ fontSize:"clamp(11px,1.5vw,13px)", letterSpacing:"3px", textTransform:"uppercase", color:ORANGE, marginBottom:24, fontWeight:500 }}>Let's Build</div>
       <h2 style={{ fontFamily:"'Playfair Display', serif", fontSize:"clamp(32px,6vw,72px)", color:CREAM, fontWeight:700, lineHeight:1.1, marginBottom:24, maxWidth:700 }}>
         Ready to Start<br/>the Moment<br/>Assets Arrive
@@ -196,7 +196,7 @@ function Slide6() {
       <p style={{ fontSize:"clamp(14px,1.8vw,17px)", color:"rgba(245,240,232,0.55)", lineHeight:1.8, maxWidth:480, marginBottom:48 }}>
         I value clarity and execution over endless revisions — the same way you do. If this sounds like the right fit, I'm ready.
       </p>
-      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(140px,1fr))", gap:14, width:"100%", maxWidth:600, marginBottom:40 }}>
+      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(120px,1fr))", gap:10, width:"100%", maxWidth:600, marginBottom:32 }}>
         {[
           { label:"Platform", val:"Next.js 14" },
           { label:"Interactive", val:"$1,500 · 7 days" },
@@ -291,6 +291,8 @@ export default function ProposalDeck() {
           paddingTop:"clamp(60px,8vh,80px)",
           paddingBottom:"clamp(70px,10vh,90px)",
           cursor: current < total - 1 ? "pointer" : "default",
+          overflowY:"auto",
+          overflowX:"hidden",
         }}
       >
         <SlideComponent />
